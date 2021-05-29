@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT manage:app
+web: gunicorn Sose.wsgi --log-file -
