@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v116_21 {
+  width: 100%;
+  height: 700px;
+  background: #F2F7FD;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v116_22 {
+  width: 141px;
+  height: 40px;
+  background: url("../images/v116_22.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 612px;
+  left: 45%;
+  border: 2px solid rgba(219,219,219,1);
+  overflow: hidden;
+}
+.v116_22:hover {background-color: #4FA6F9}
+.v116_23 {
+  width: 70px;
+  color: rgba(219,219,219,1);
+  position: absolute;
+  top: 619px;
+  left: 505px;
+  font-family: Noto Sans KR;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+.logo_img{
+  width: 48px;
+  height: 30px;
+  background-repeat: no-repeat;
+  opacity: 1;
+  position: relative;
+  top: 2px;
+  left: 10px;
+  overflow: hidden;
+}
+.v128_12 {
+  width: 100%;
+  height: 35px;
+  background: url("../images/v128_12.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v116_24 {
+  width: 100%;
+  height: 35px;
+  background: #BED9F4;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v116_25 {
+  width: 345px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 6px;
+  left: 65px;
+  font-family: Noto Sans KR;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.textBox {
+  width: 955px;
+  height: 454px;
+  background: rgba(229,229,229,1);
+  opacity: 1;
+  position: absolute;
+  top: 125px;
+  left: 20%;
+  overflow: hidden;
+}
+.v116_27 {
+  width: 22px;
+  height: 22px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 527px;
+  left: 22%;
+  border: 1px solid rgba(0,0,0,1);
+  overflow: hidden;
+}
+.v116_28 {
+  width: 871px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 535px;
+  left: 25%;
+  font-family: Noto Sans KR;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v116_29 {
+  width: 870px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 180px;
+  left: 158px;
+  font-family: Noto Sans KR;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}

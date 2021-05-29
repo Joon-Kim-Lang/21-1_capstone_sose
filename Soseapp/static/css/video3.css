@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.logo_img{
+  width: 48px;
+  height: 30px;
+  background-repeat: no-repeat;
+  opacity: 1;
+  position: relative;
+  top: 2px;
+  left: 10px;
+  overflow: hidden;
+}
+.npc_img{
+  width: 100px;
+  height: 300px;
+  background-repeat: no-repeat;
+  opacity: 1;
+  position: relative;
+  top: 20px;
+  left: 200px;
+  overflow: hidden;
+}
+.v116_2374 {
+  width: 100%;
+  height: 700px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v116_2376 {
+  width: 100%;
+  height: 328px;
+  background: rgba(242,249,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 372px;
+  left: 0px;
+  overflow: hidden;
+}
+.v116_2382 {
+  width: 100%;
+  height: 35px;
+  background: rgba(149,199,251,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.v116_2385 {
+  width: 188px;
+  height: 40px;
+  background: rgba(255,91,94,1);
+  opacity: 1;
+  position: absolute;
+  top: 630px;
+  left: 1150px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.20000000298023224);
+  overflow: hidden;
+}
+
+.v116_2399 {
+  width: 245px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 8px;
+  left: 60px;
+  font-family: Noto Sans KR;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.v116_2400 {
+  width: 803px;
+  height: 100px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 500px;
+  left: 450px;
+  border: 2px solid rgba(174,174,174,1);
+  overflow: hidden;
+}
+.v116_2383 {
+  width: 100px;
+  height: 25px;
+  color: #FFFFFF;
+  background-color: #0087FA;
+  position: absolute;
+  top: 400px;
+  left: 480px;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+.v116_2384 {
+  width: 755px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 430px;
+  left: 480px;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.mainLabel {
+  width: 755px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 510px;
+  left: 480px;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}

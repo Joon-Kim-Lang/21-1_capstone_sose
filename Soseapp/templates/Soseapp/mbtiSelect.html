@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+      <link href="/static/css/mbti.css" rel="stylesheet" />
+  </head>
+<body>
+  <div class="v116_24"> <img class = logo_img src="/static/images/logo_topbar.png"> </div>
+  <span class="v116_25"> MBTI Selection</span>
+    <h2 class="section-subtitle">Select your MBTI if you already know</h2>
+  <form action="{% url 'Soseapp:main' %}" method="POST" enctype="multipart/form-data" class="form-horizontal">
+  {% csrf_token %}
+<div class="about__container bd-grid">
+  {% for mbti in mbtiList %}
+  <div class="about__img">
+      <button type = input  value='{{mbti}}' name="slct" class="button__big"> {{mbti}}</button>
+    </div>
+  {% endfor %}
+</div>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+      <link href="/static/css/mainpage.css" rel="stylesheet" />
+      <title>Mainpage</title>
+    </head>
+
+    <body>
+      <div class="v116_1043">
+        <div class="v122_22"></div>
+        <div class="name"></div>
+        <div class="v116_1045"> <img class = logo_img src="/static/images/logo_topbar.png"> </div>
+          <span class="v116_1046">Main Page</span>
+        <div class="v116_1047"></div>
+        <progress class="selfrecognition_bar" value="10" max="100">70 %</progress>
+          <span class="v116_1050">ESFJ - Supporters </span>
+          <span class="v116_1051">Personality Re-test</span>
+          <span class="v116_1052">Self-Recognition</span>
+          <span class="v116_1053">Lv.1</span>
+        <progress class="selfcontrol_bar" value="10" max="100">70 %</progress>
+          <span class="v116_1055">Self-Control</span>
+        <progress class="communication_bar" value="70" max="100">70 %</progress>
+          <span class="v116_1059">Communication</span>
+        <progress class="empathy_bar" value="50" max="100">70 %</progress>
+          <span class="v116_1061">Empathy</span>
+          <span class="v116_1062">Han</span>
+          <span class="v116_1063">My Progress</span>
+          <span class="v116_1064">Feedback</span>
+        <img class= 'v116_1065 'src="https://2.gall-img.com/hygall/files/attach/images/82/895/390/301/8279494d002f2f7f18c8b2678a6ff998.jpg" alt="Lamp">
+        <progress class="enthusiasm_bar" value="50" max="100">70 %</progress>
+        <div class="v116_1068">
+          <details>
+            <summary>2020.04.14   Apartment Building - 5th floor parent (leader)</summary>
+            <p>FeedbackFeedbackFeedbackFeedbackFeedbackFeedbackFeedbackFeedbackFeedbackFeedbackFeedbackFeedbackFeedbackFeedbackFeedback</p>
+          </details>
+          <details>
+            <summary>2020.04.09   English Class - Student 2</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+          </details>
+          <details>
+            <summary>2020.03. 27   Department Store - Kid 1</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+          </details>
+          <details>
+            <summary>2020.03.12   Singing Contest - Contestant 2</summary>
+          </details>
+          <details>
+            <summary>2020.03. 08   English Class - Team leader (leader)</summary>
+          </details>
+          <details>
+            <summary>2020.03. 02   Singing Contest - Contestant 1</summary>
+          </details>
+        </div>
+          <span class="v116_1070">Enthusiasm</span>
+          <span class="v116_1072">Yonsei Middle School</span>
+          <span class="v116_1073">Grade 2</span>
+          <span class="v116_1074">Class 4</span>
+          <span class="v116_1075">Homeroom teacher</span>
+          <span class="v116_1076">CODE: HIK113</span>
+        <div class="v116_1077"></div>
+          <span class="v116_1078">?</span>
+
+            <div class="v122_25">
+
+              <form action="{% url 'Soseapp:video' %}" method="POST" enctype="multipart/form-data" class="form-horizontal">
+              {% csrf_token %}
+                  <button type = input  name="startGame" class="v122_26"> Start Game!</button>
+            </div>
+          </div>
+        </body>
+        </html>

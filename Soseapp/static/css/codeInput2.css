@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v116_3 {
+  width: 100%;
+  height: 700px;
+  background: rgba(196,196,196,0.20000000298023224);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v116_5 {
+  width: 755px;
+  height: 464px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 118px;
+  left: 25%;
+  overflow: hidden;
+}
+.codeInput {
+  width: 433px;
+  height: 34px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 430px;
+  left: 37%;
+  border: 1px solid rgba(196,196,196,1);
+  overflow: hidden;
+}
+
+.logo {
+  width: 270px;
+  height: 250px;
+  background: #FFFFFF;
+  opacity: 1;
+  position: absolute;
+  top: 163px;
+  left: 42%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.v128_6 {
+  width: 193px;
+  height: 34px;
+  background: url("../images/v128_6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 506px;
+  left: 44%;
+  overflow: hidden;
+}
+.startButton {
+  width: 193px;
+  height: 34px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: 1px solid rgba(123,123,123,1);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.startButton:hover {background-color: #4FA6F9}
+.v128_8 {
+  width: 92px;
+  color: rgba(65,65,65,1);
+  position: absolute;
+  top: 6px;
+  left: 51px;
+  font-family: Noto Sans KR;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}

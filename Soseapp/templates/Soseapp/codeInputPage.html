@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+    <link href="/static/css/codeInput2.css" rel="stylesheet" />
+    <title>Codeinput</title>
+  </head>
+
+  <body>
+
+  {% if message %}
+      <script>alert("{{ message }}")</script>
+  {% endif %}
+    <div class="v116_3"  style="background-image: url('/static/images/log-in_bg.png'); background-repeat: no-repeat;  background-attachment: fixed;  background-size: 100% 100%;">
+      <div class="v116_5"></div>
+      <form action="{% url 'Soseapp:serviceAgree' %}" method="POST" enctype="multipart/form-data" class="form-horizontal">
+        {% csrf_token %}
+      <input class="codeInput" type='text' placeholder='Enter your code number' name = 'stuCode' required></input>
+      <div class="logo"  style="background-image: url('/static/images/logo_login.png'); background-size: 100% 100%;"></div>
+      <div class="v128_6">
+        <input class="startButton" type='submit' value = "Get Started!"></input>
+      </div>
+    </div>
+  </body>
+</html>

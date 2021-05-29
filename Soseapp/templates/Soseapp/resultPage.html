@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+    <link href="/static/css/resultPage.css" rel="stylesheet" />
+    <title>ResultPage</title>
+    <style>
+  table, th, td {
+    border: 1px solid #bcbcbc;
+  }
+  table {
+    width: 500px;
+    height: 200px;
+  }
+  th {
+    color : #FFF;
+    background-color: #FCB8B8;
+    width: 300px;
+    height: 50px;
+  }
+  td {
+  background-color: #FBC7C7;
+  text-align: center;
+}
+</style>
+  </head>
+  <body>
+    <div class="v116_2486">
+      <div class="v242_247">
+        </div>
+      <div class="v116_2487">
+        <table>
+       <thead>
+         <tr>
+           <th>"Start-up Scenario"</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>Comummication +5</td>
+         </tr>
+         <tr>
+           <td>Empathy +5</td>
+         </tr>
+         <tr>
+           <td>Enthusiasm +3</td>
+         </tr>
+       </tbody>
+     </table>
+       </div>
+      <div class="v242_256">  <canvas id="marksChart" width="50" height="50"></canvas></div>
+        <div class="v116_2515"></div>
+
+      <div class="v230_489"> <img class = logo_img src="/static/images/logo_topbar.png"></div>
+      <span class="v230_490">“Start-Up” Scenario  -  Advancements</span>
+      <input type="button" value="New Game" onclick="location.href='video'" class="v242_248"></input>
+      <input type="button" value="Main Page" onclick="location.href='main'" class="v242_251"></input>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script type="text/javascript">
+      var marksCanvas = document.getElementById("marksChart");
+
+      Chart.defaults.global.defaultFontFamily = "Lato";
+      Chart.defaults.global.defaultFontSize = 10;
+
+      var marksData = {
+
+        labels: ["Communication", "Self-Recognition", "Empathy", "Enthusiasm", "Self-Control"],
+        datasets: [{
+          label: "Previous",
+          backgroundColor: "rgba(200,0,0,0.3)",
+          borderColor: "rgba(200,0,0,0.6)",
+          fill: true,
+          radius: 6,
+          pointRadius: 6,
+          pointBorderWidth: 3,
+          pointBackgroundColor: "orange",
+          pointBorderColor: "rgba(200,0,0,0.3)",
+          pointHoverRadius: 10,
+          data: [60, 60, 60, 60, 60]
+        }, {
+          label: "Progressed",
+          backgroundColor: "rgba(0,0,200,0.3)",
+          borderColor: "rgba(0,0,200,0.6)",
+          fill: true,
+          radius: 6,
+          pointRadius: 6,
+          pointBorderWidth: 3,
+          pointBackgroundColor: "cornflowerblue",
+          pointBorderColor: "rgba(0,0,200,0.3)",
+          pointHoverRadius: 10,
+          data: [63, 60, 60, 63, 63]
+        }]
+      };
+
+      var chartOptions = {
+        scale: {
+          ticks: {
+            beginAtZero: true,
+            min: 50,
+            max: 70,
+            stepSize: 20
+          },
+          pointLabels: {
+            fontSize: 18
+          }
+        },
+        legend: {
+          position: 'left'
+        }
+      };
+
+      var radarChart = new Chart(marksCanvas, {
+        type: 'radar',
+        data: marksData,
+        options: chartOptions
+      });
+
+    </script>
+  </body>
+  </html>

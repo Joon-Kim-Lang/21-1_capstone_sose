@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+    <link href="/static/css/video2.css" rel="stylesheet" />
+    <title>game</title>
+  </head>
+  <body>
+    <div class="v116_2374">
+      <div class="v116_2376"><img class = npc_img src="/static/images/salt_npc.png"></div>
+      <div class="v116_2382"> <img class = logo_img src="/static/images/logo_topbar.png"></div>
+      <input type="button" value='Begin!' onclick = "changeLabel(this)" class="v116_2385" />
+      <span class="v116_2399">“Start-Up” Scenario  -  Quest 1</span>
+      <div class="v116_2400"></div>
+      <label class="v116_2384" id="lblEmp">“Welcome! You are about to solve a problem that is happening in Startup as a product manager.
+Make sure you fully understand the situation so that you can discuss the solution with other players.
+After the discussion, a randomly assigned leader in your team may submit the answer. Then, let’s begin!”</label>
+
+</div>
+
+<script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
+<script>
+  callFrame = window.DailyIframe.createFrame({
+    showLeaveButton: false,
+    iframeStyle: {
+      position: 'fixed',
+      top: '35px',
+      width: '99%',
+     height: '46%'
+    }
+  });
+  callFrame.join({ url: 'https://welcomtosose.daily.co/Z3kXBLbOZBnwmC0Px2KQ' })
+
+  function changeLabel(objButton) {
+
+    let btntxt = objButton.value;
+    if (btntxt == 'Begin!'){
+      objButton.value = "Next";
+      let lbl = document.getElementById('lblEmp');
+      let empName = "Welcome to (Service name) Venture! You are all friends who have just opened a business of your \
+      dreams during childhood. Currently the team came to a consensus on which service to launch, and \
+      now at the phase of programming the code for the new application. Your team initially thought of 3 \
+      weeks to finish this phase, but you are already past one month. [Jun] is a very hard-working and \
+      enthusiastic member, but his programming skills still need some help. You all know that he is doing a \
+      great job in regards of his effort, but you cannot delay the schedule anymore. \
+      As a friend, but also as a co-worker how would you solve this situation?";
+
+      lbl.innerText = empName;       // TREATS EVERY CONTENT AS TEXT.
+    }
+    else{
+      objButton.value = "Waiting for others";
+      objButton.style.backgroundColor = 'grey';
+      objButton.disabled = "true";
+      setTimeout(() => {  window.location.href = "/quest1";}, 5000);
+
+    }
+
+  }
+</script>
+  </body>
+</html>

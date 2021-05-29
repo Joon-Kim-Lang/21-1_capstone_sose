@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+    <link href="/static/css/quest1.css" rel="stylesheet" />
+    <title>Quest2</title>
+    <style>
+    #my_modal {
+        display: none;
+        width: 300px;
+        padding: 20px 60px;
+        background-color: #fefefe;
+        border: 1px solid #888;
+        border-radius: 3px;
+    }
+
+    #my_modal .modal_close_btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+</style>
+  </head>
+  <body>
+    <!-- 모달 파트 -->
+    <div id="my_modal">
+      <h3> Quest  2</h3><br/>
+      Your team is now at the design phase, and [Lyn] is working so hard to match the deadline. <br/>
+      The design is perfect, and with each meeting your team is being more and more excited. But, oops! What just happened?<br/>
+      [Seo] accidentally pulled the cord of [Lyn]’s laptop. [Lyn] forgot to save his/her progress for today and lost all of her design files. <br/>
+      [Lyn] is very angry right now, and the [Seo] has no idea what to do. <br/>
+      How will you relieve this tension between the two?
+    <a class="modal_close_btn">Close</a>
+  </div>
+
+
+    <div class="v116_2669">
+      <div class="v116_2670">
+      <button type="button" id ="popup_open_btn" class="v116_2712">Q</button>
+  </div>
+
+      <div class="v116_2671"><img class = logo_img src="/static/images/logo_topbar.png"></div>
+      <span class="v116_2672">“Start-Up” Scenario  -  Quest 2</span>
+      <span class="v116_2673">Discussion</span>
+      <span class="v116_2674">Solution</span>
+
+
+
+        <span class="s1">Scold [Seo] for making a stupid mistake.</span>
+        <span class="s2">Scold [Lyn] for not saving the files.</span>
+        <span class="s3">Let the two people talk to each other and share their thoughts/make peace.</span>
+        <span class="s4">Try to come up with a way to restore the design files.</span>
+
+        <form action="{% url 'Soseapp:video3' %}" method="POST" enctype="multipart/form-data" class="form-horizontal">
+        {% csrf_token %}
+        <input type="hidden" id="hidden" name = "hidden" value=""></input>
+        <input class="v116_2709" type="submit" id = "SubmitBtn" value = "Submit" disabled = True />
+      </form>
+        <div id = "demo"></div>
+        <div class="v148_319">
+      </div>
+      <div class="v148_303">
+        <input type="button" value='A' onclick = "onClick(this)" class="v116_2700" / >
+      </div>
+      <div class="v148_304">
+        <input type="button" value='B' onclick = "onClick(this)" class="v116_2702" / >
+      </div>
+      <div class="v148_305">
+        <input type="button" value='C' onclick = "onClick(this)" class="v116_2704" / >
+      </div>
+      <div class="v148_306">
+        <input type="button" value='D' onclick = "onClick(this)" class="v116_2708" / >
+      </div>
+    </div>
+
+
+    <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
+    <script>
+      callFrame = window.DailyIframe.createFrame({
+        showLeaveButton: false,
+        iframeStyle: {
+          position: 'fixed',
+          top: '100px',
+          width: '77%',
+         height: '75%'
+        }
+      });
+      callFrame.join({ url: 'https://welcomtosose.daily.co/Z3kXBLbOZBnwmC0Px2KQ' })
+
+      function modal(id) {
+          var zIndex = 9999;
+          var modal = document.getElementById(id);
+
+          // 모달 div 뒤에 희끄무레한 레이어
+          var bg = document.createElement('div');
+          bg.setStyle({
+              position: 'fixed',
+              zIndex: zIndex,
+              left: '0px',
+              top: '0px',
+              width: '100%',
+              height: '100%',
+              overflow: 'auto',
+              // 레이어 색갈은 여기서 바꾸면 됨
+              backgroundColor: 'rgba(0,0,0,0.4)'
+          });
+          document.body.append(bg);
+
+          // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
+          modal.querySelector('.modal_close_btn').addEventListener('click', function() {
+              bg.remove();
+              modal.style.display = 'none';
+          });
+
+          modal.setStyle({
+              position: 'fixed',
+              display: 'block',
+              boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+
+              // 시꺼먼 레이어 보다 한칸 위에 보이기
+              zIndex: zIndex + 1,
+
+              // div center 정렬
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              msTransform: 'translate(-50%, -50%)',
+              webkitTransform: 'translate(-50%, -50%)'
+          });
+      }
+
+      // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
+      Element.prototype.setStyle = function(styles) {
+          for (var k in styles) this.style[k] = styles[k];
+          return this;
+      };
+
+      document.getElementById('popup_open_btn').addEventListener('click', function() {
+          // 모달창 띄우기
+          modal('my_modal');
+      });
+
+
+
+
+      //버튼 클릭이벤트
+
+      var answer = ''
+
+      function onClick(objButton) {
+
+        document.getElementsByClassName('v116_2709')[0].disabled = false;
+        document.getElementsByClassName('v116_2709')[0].style.backgroundColor = '#FABF29';
+
+        let btntxt = objButton.className;
+
+        let btnList = ["v116_2700", "v116_2702", "v116_2704", "v116_2708"];
+
+
+        for(btn in btnList){
+
+          if(btntxt == btnList[btn]) {
+              objButton.style.backgroundColor = 'red';
+              answer = objButton.value;
+          }
+
+          else{
+            document.getElementsByClassName(btnList[btn])[0].style.backgroundColor = 'white';
+          }
+        }
+        document.getElementById("hidden").setAttribute('value', answer);
+      }
+
+      var time = 900;
+      var min = "";
+      var sec = "";
+
+      var x = setInterval(function(){
+        min = parseInt(time/60);
+        sec = time%60;
+
+        document.getElementById("demo").innerHTML = "Time Left: " + min + "분" + sec + "초";
+        time--;
+
+        if (time < 0){
+          clearInterval(x);
+          window.location.href = 'http://127.0.0.1:8000/video3';
+        }
+      },1000);
+
+
+      </script>
+  </body>
+
+</html>

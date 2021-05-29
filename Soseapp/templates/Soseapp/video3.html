@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+    <link href="/static/css/video3.css" rel="stylesheet" />
+    <title>game</title>
+  </head>
+  <body>
+    <div class="v116_2374">
+      <div class="v116_2376"><img class = npc_img src="/static/images/salt_npc.png"></div>
+      <div class="v116_2382"> <img class = logo_img src="/static/images/logo_topbar.png"></div>
+      <input type="button" value='See Advancements' onclick = "changeLabel(this)" class="v116_2385" hidden = True/>
+      <span class="v116_2399">“Start-Up” Scenario  -  Quest 1</span>
+      <div class="v116_2400"></div>
+      <label class="v116_2383" id="lblEmp2">Your Answer</label>
+      <label class="v116_2384" id="lblEmp">{{answer}}. {{text}}</label>
+      {% if answer == 'A' %}
+        <label class="mainLabel" id="lblEmp3"> “Hmm... It doesn’t seem like the best way to solve the problem. Be sure to check feedback from your teacher afterwards. Let’s move on to the next quest for now!”</label>
+      {% else %}
+        <label class="mainLabel" id="lblEmp3"> “Well done! You have successfully solved the problem.”</label>
+      {% endif %}
+
+
+</div>
+
+<script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
+<script>
+  callFrame = window.DailyIframe.createFrame({
+    showLeaveButton: false,
+    iframeStyle: {
+      position: 'fixed',
+      top: '35px',
+      width: '99%',
+     height: '46%'
+    }
+  });
+  callFrame.join({ url: 'https://welcomtosose.daily.co/Z3kXBLbOZBnwmC0Px2KQ' })
+
+  setTimeout(() => {  document.getElementsByClassName("v116_2385")[0].hidden = false;
+  document.getElementsByClassName("v116_2385")[0].style.backgroundColor  = '#FABF29';
+  document.getElementsByClassName("v116_2385")[0].style.color  = 'white';
+
+ let innertext = "You have successfully finished this scenario! \
+You can give each other feedback or talk about the scenario you have worked through as a group. \
+When you’re done, click the button below to see your advancements. \
+Goodbye Everyone~  :)"
+
+ document.getElementsByClassName("v116_2384")[0].hidden = true;
+ document.getElementsByClassName("v116_2383")[0].hidden = true;
+document.getElementsByClassName("v116_2400")[0].style.height ="200px" ;
+document.getElementsByClassName("v116_2400")[0].style.top = "400px";
+document.getElementsByClassName("v116_2400")[0].style.top = "400px";
+document.getElementsByClassName("mainLabel")[0].style.top = "410px";
+document.getElementsByClassName("mainLabel")[0].innerText = innertext;
+document.getElementsByClassName("v116_2399")[0].innerText = "“Start-Up” Scenario  -  Quest 2"; }, 2000);
+
+  function changeLabel(objButton) {
+
+      window.location.href = "/result";
+  }
+
+</script>
+  </body>
+</html>
