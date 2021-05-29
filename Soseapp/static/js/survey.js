@@ -250,7 +250,7 @@
                 data: {'scores': scores},
                 success: function (data) {
                      //this gets called when server returns an OK response
-                     window.location.href = 'http://127.0.0.1:8000/mbti';
+                     window.location.href = ' https://hidden-ridge-66222.herokuapp.com/mbti';
                 },
                 error: function (data) {
                      alert("it didnt work");
