@@ -1,0 +1,1 @@
+web: gunicorn Soseapp1.wsgi --log-file -
