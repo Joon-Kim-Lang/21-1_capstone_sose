@@ -47,7 +47,7 @@ def mainPage(request):
         global myMBTI
         myMBTI = mbti
 
-    return render(request, "Soseapp/mainPage.html")
+    return render(request, "Soseapp/mainPage.html", {"mbti":myMBTI})
 
 def videoPage(request):
     return render(request, "Soseapp/video.html")

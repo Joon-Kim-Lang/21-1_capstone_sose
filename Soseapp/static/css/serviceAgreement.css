@@ -4,6 +4,10 @@
 body {
   font-size: 14px;
 }
+#submitBtn{
+  width : 200px;
+  height: 200px;
+}
 .v116_21 {
   width: 100%;
   height: 700px;
@@ -95,6 +99,7 @@ body {
   top: 125px;
   left: 20%;
   overflow: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 .v116_27 {
   width: 22px;

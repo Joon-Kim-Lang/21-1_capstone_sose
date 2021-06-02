@@ -1,6 +1,27 @@
 body{
   background-color: : #F2F7FD;
 }
+#mbtiLink{
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  position: relative;
+  background-color: #FABF29;
+  width: 400px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  left:37%;
+  color: var(--text);
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px var(--light) inset;
+  margin-bottom: 15px;
+
+}
+
+
 .logo_img{
   width: 48px;
   height: 30px;

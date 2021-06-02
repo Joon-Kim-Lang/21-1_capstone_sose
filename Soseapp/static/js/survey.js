@@ -114,7 +114,7 @@
           + $list.attr('id')
           + '" class="scores"></div>');
         $list.after('<input type="button" id="submitBtn" class="button btnStyle" '
-          + 'value="Submit" />');
+          + 'value="Submit" style="height:50px;width:100px; background-color: #66AAEE; left:50%;   position: relative; border:none;" />');
 
         $('#scores-' + $list.attr('id')).hide();
 
@@ -251,6 +251,7 @@
                 success: function (data) {
                      //this gets called when server returns an OK response
                      window.location.href = ' https://hidden-ridge-66222.herokuapp.com/mbti';
+                    // window.location.href = 'mbti';
                 },
                 error: function (data) {
                      alert("it didnt work");
