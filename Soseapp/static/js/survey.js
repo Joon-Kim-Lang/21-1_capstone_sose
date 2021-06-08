@@ -251,7 +251,7 @@
                 success: function (data) {
                      //this gets called when server returns an OK response
                      window.location.href = ' https://hidden-ridge-66222.herokuapp.com/mbti';
-                    // window.location.href = 'mbti';
+                    //window.location.href = 'mbti';
                 },
                 error: function (data) {
                      alert("it didnt work");

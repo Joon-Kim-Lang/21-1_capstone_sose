@@ -49,6 +49,9 @@ def mainPage(request):
 
     return render(request, "Soseapp/mainPage.html", {"mbti":myMBTI})
 
+def toTheme(request):
+    return render(request, "Soseapp/themeslt.html")
+
 def videoPage(request):
     return render(request, "Soseapp/video.html")
 
@@ -65,17 +68,17 @@ def video2Page(request):
 
     if request.method == 'GET':
         answer = 'A'
-        text = 'Talk to [Jun] and ask what he needs to finish the work on time.'
+        text = 'Talk to programmer and ask what he needs to finish the work on time.'
         return render(request, "Soseapp/video2.html", {"answer":answer, "text": text})
 
     text = ''
     answer = request.POST["hidden"]
     if answer == 'A':
-        text = 'Talk to [Jun] and ask what he needs to finish the work on time.'
+        text = 'Talk to programmer and ask what he needs to finish the work on time.'
     elif answer == 'B':
-        text = 'Understand the burden of [Jun], and provide as much help as possible.'
+        text = 'Understand the burden of programmer, and provide as much help as possible.'
     elif answer == 'C':
-        text = 'Tell [Han] to fire [Jun] and hire a new one as soon as possible.'
+        text = 'Tell CEO to fire programmer and hire a new one as soon as possible.'
     elif answer == 'D':
         text = 'Decide to give up on the current project and start a new one.'
 
@@ -85,15 +88,15 @@ def video3Page(request):
 
     if request.method == 'GET':
         answer = 'A'
-        text = 'Scold [Seo] for making a stupid mistake.'
+        text = 'Scold marketer for making a stupid mistake.'
         return render(request, "Soseapp/video3.html", {"answer":answer, "text": text})
 
     text = ''
     answer = request.POST["hidden"]
     if answer == 'A':
-        text = 'Scold [Seo] for making a stupid mistake.'
+        text = 'Scold marketer for making a stupid mistake.'
     elif answer == 'B':
-        text = 'Scold [Lyn] for not saving the files.'
+        text = 'Scold desginer for not saving the files.'
     elif answer == 'C':
         text = 'Let the two people talk to each other and share their thoughts/make peace.'
     elif answer == 'D':

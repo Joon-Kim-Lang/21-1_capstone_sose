@@ -28,6 +28,7 @@ urlpatterns = [
     path('video2', views.video2Page, name = 'video2'),
     path('quest2', views.toQuest2, name = 'quest2'),
     path('video3', views.video3Page, name = 'video3'),
-    path('result', views.toResult, name = 'result')
+    path('result', views.toResult, name = 'result'),
+    path('theme', views.toTheme, name = 'theme')
 
 ]
